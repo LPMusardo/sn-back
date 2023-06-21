@@ -52,9 +52,13 @@ node populate.js
 ```
 
 
-## Accéder au site
+## Accéder à l'API
+[http://localhost:3000/users](http://localhost:3000/users)
 
-[http://localhost:3000](http://localhost:3000/users)
+
+## Mise en place du Front-end
+Veillez suivre ce guide [sn-front](https://github.com/LPMusardo/sn-front) afin d'utiliser le client web (React) de l'API.
+
 
 ## Auteurs
 * **Léo-Paul Musardo**
