@@ -14,7 +14,7 @@ function connect_db(context) {
   Sequelize.useCLS(cls.createNamespace("project_ns"));
 
   if (context == "prod") {
-    return new Sequelize("sn_prod_db", "root", "", {
+    return new Sequelize("sn_prod_db", "root", "secret", {
       host: "127.0.0.1",
       dialect: "mysql",
       collate: "utf8mb4_unicode_ci", // collation utf8mb4_general_ci ignore la casse et les accentuations
@@ -29,7 +29,7 @@ function connect_db(context) {
     });
   }
 
-  return new Sequelize("sn_test_db", "root", "", {
+  return new Sequelize("sn_test_db", "root", "secret", {       
     host: "127.0.0.1",
     dialect: "mysql",
     collate: "utf8mb4_unicode_ci",
