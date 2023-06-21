@@ -4,9 +4,9 @@ Le but de ce projet (45j) est de créer un réseau social en utilisant une API R
 
 L'application permettra de créer des utilisateurs, des événements, des commentaires et des notes.  
 
-- La partie _front-end_ (ce dépot git) repose principalement sur React-dom, Raact-Router, et Chakra-ui.
+- La partie _front-end_  ([Second dépot git](https://github.com/LPMusardo/sn-front)) repose principalement sur React-dom, Raact-Router, et Chakra-ui.
 
-- La partie _back-end_ (second dépot git),  quand à elle, repose principalement sur Express, MySQL, Sequelize, JWT
+- La partie _back-end_ (ce dépot git),  quand à elle, repose principalement sur Express, MySQL, Sequelize, JWT
 
 
 ## Playground
@@ -46,7 +46,7 @@ npm start
 
 
 ## Peupler la base de données
-On peut à présent executer le script suivant pour peupler la base avec des données fictives :   
+On peut à présent executer le script suivant, dans un second terminal, pour peupler la base avec des données fictives :   
 ```bash 
 node populate.js
 ```
