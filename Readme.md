@@ -1,54 +1,42 @@
 # M1 IDL Projet Social network (SN)
 
-Le but de ce projet est de créer un réseau social en utilisant une API Rest et un client web pour cette API.
-Une base de données sera docn necessaire.
+Le but de ce projet (45j) est de créer un réseau social en utilisant une API Rest et un client web pour cette API.
 
 L'application permettra de créer des utilisateurs, des événements, des commentaires et des notes.  
 
-- La partie _front-end_ repose principalement sur React-dom, Raact-Router, et Chakra-ui.
+- La partie _front-end_ (ce dépot git) repose principalement sur React-dom, Raact-Router, et Chakra-ui.
 
-- La partie back-end_, quand à elle, repose principalement sur Express, MySQL, Sequelize, JWT
+- La partie _back-end_ (second dépot git),  quand à elle, repose principalement sur Express, MySQL, Sequelize, JWT
 
-## Pour commencer
 
-### Le backend
+## Playground
+Une version d'essai du site web est dispobible à l'adressse : [sn.musardo.fr](https://sn.musardo.fr)
 
+
+## Pré-requis
+Vous aurez besoin de :
+1. MySQL
+1. NodeJS/npm
+
+## Mise en place
+
+### Récupérer le code
 ```bash
-git clone https://github.com/MaximeGuiliani/Social-network.git
+git clone https://github.com/LPMusardo/sn-back.git
 ```
 
-### Le frontend
-```bash
-git clone https://github.com/LPMusardo/sn-front.git
-```
-
-### Pré-requis
-
-Vous allez avoir besoin de :
-- NodeJS/Npm
-- MySQL
-
-### Installation
-
-#### Configuration de la base de données
-
-Il faut (juste) créer la base de donnée mySQL au préalable
-Une liste des commandes utiles est disponible dans le fichier [start_mysql.sh](script/start_mysql.sh)
-
-#### Mise en place du backend
-
-Pour configurer le backend, il faut installer les dépendances.
-
+### Installer des dépendances
 ```bash
 npm install
 ```
 
+### Configuration de la base de données
 
-## Démarrage
+Il (suffit) de créer la base de donnée mySQL au préalable.  
+Une liste des commandes utiles est disponible dans le fichier [start_mysql.sh](script/start_mysql.sh)
 
 
-On peut maintenant lancer le serveur.
-
+## Démarrage API
 ```bash
 npm start
 ##### result
@@ -56,27 +44,19 @@ npm start
 # http://localhost:3000
 ```
 
-Ensuite, on peut executer l'un des scripts suivant dans un second terminal [initCategories.js](initCategories.js) pour initialiser les categories ou [populate.js](populate.js) pour commencer à utiliser l'application avec des données de test.
 
-```bash 
-node initCategories.js
-```
-
-OU
-
-
+## Peupler la base de données
+On peut à présent executer le script suivant pour peupler la base avec des données fictives :   
 ```bash 
 node populate.js
 ```
 
 
-## Vous pouver maintenant faire des requetes à l'API
-Une **documentation** est disponible à l'adresse suivante : [Social_network_API](https://app.swaggerhub.com/apis-docs/MAXIMEGUILIANI_2/Social_network_API/1.0.0)
+## Accéder au site
 
-
+[http://localhost:3000](http://localhost:3000/users)
 
 ## Auteurs
 * **Léo-Paul Musardo**
 * **Maxime Guiliani**  
-* **Mickaël Lascoutounas** 
-* **Yacine Boukhari** 
+
